@@ -260,7 +260,7 @@
     "@babel/helper-remap-async-to-generator" "^7.12.1"
     "@babel/plugin-syntax-async-generators" "^7.8.0"
 
-"@babel/plugin-proposal-class-properties@^7.0.0", "@babel/plugin-proposal-class-properties@^7.1.0", "@babel/plugin-proposal-class-properties@^7.10.4", "@babel/plugin-proposal-class-properties@^7.12.1":
+"@babel/plugin-proposal-class-properties@^7.1.0", "@babel/plugin-proposal-class-properties@^7.10.4", "@babel/plugin-proposal-class-properties@^7.12.1":
   "integrity" "sha512-cKp3dlQsFsEs5CWKnN7BnSHOd0EOW8EKpEjkoz1pO2E5KzIDNV9Ros1b0CnmbVgAGXJubOYVBOGCT1OmJwOI7w=="
   "resolved" "https://registry.npmjs.org/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.12.1.tgz"
   "version" "7.12.1"
@@ -268,7 +268,7 @@
     "@babel/helper-create-class-features-plugin" "^7.12.1"
     "@babel/helper-plugin-utils" "^7.10.4"
 
-"@babel/plugin-proposal-decorators@^7.0.0", "@babel/plugin-proposal-decorators@^7.10.5":
+"@babel/plugin-proposal-decorators@^7.10.5":
   "integrity" "sha512-fhkE9lJYpw2mjHelBpM2zCbaA11aov2GJs7q4cFaXNrWx0H3bW58H9Esy2rdtYOghFBEYUDRIpvlgi+ZD+AvvQ=="
   "resolved" "https://registry.npmjs.org/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.12.12.tgz"
   "version" "7.12.12"
@@ -909,30 +909,6 @@
   "resolved" "https://registry.npmjs.org/@ember-data/rfc395-data/-/rfc395-data-0.0.4.tgz"
   "version" "0.0.4"
 
-"@ember-decorators/argument@^0.8.13":
-  "integrity" "sha512-WsNQMzlEEl7puxwC3yE6VUmRvAHdIbGOQJ+tYA4DXbZOAfagjCDxhz2Gxl0JVG7Sc87e6a2YAVZQr8CLDW8zJg=="
-  "resolved" "https://registry.npmjs.org/@ember-decorators/argument/-/argument-0.8.21.tgz"
-  "version" "0.8.21"
-  dependencies:
-    "babel-plugin-filter-imports" "^1.1.1"
-    "broccoli-funnel" "^2.0.1"
-    "ember-cli-babel" "^6.17.0"
-    "ember-cli-version-checker" "^2.0.0"
-    "ember-compatibility-helpers" "^1.0.2"
-    "ember-get-config" "^0.2.3"
-
-"@ember-decorators/babel-transforms@^2.0.1":
-  "integrity" "sha512-Sfa4bjtRpWytbBZK3fAaUp6/2QpMDds6uGA5K7S+Iz1JGX+PHTLDjl1/5t1UaOMokEB1Z9jMtwp4yRcullfFdg=="
-  "resolved" "https://registry.npmjs.org/@ember-decorators/babel-transforms/-/babel-transforms-2.1.2.tgz"
-  "version" "2.1.2"
-  dependencies:
-    "@babel/plugin-proposal-class-properties" "^7.0.0"
-    "@babel/plugin-proposal-decorators" "^7.0.0"
-    "babel-plugin-transform-class-properties" "^6.24.1"
-    "babel-plugin-transform-decorators-legacy" "^1.3.4"
-    "ember-cli-babel-plugin-helpers" "^1.0.0"
-    "ember-cli-version-checker" "^2.1.0"
-
 "@ember/edition-utils@^1.2.0":
   "integrity" "sha512-VmVq/8saCaPdesQmftPqbFtxJWrzxNGSQ+e8x8LLe3Hjm36pJ04Q8LeORGZkAeOhldoUX9seLGmSaHeXkIqoog=="
   "resolved" "https://registry.npmjs.org/@ember/edition-utils/-/edition-utils-1.2.0.tgz"
@@ -1045,17 +1021,6 @@
     "minimatch" "^3.0.4"
     "strip-json-comments" "^3.1.1"
 
-"@glimmer/compiler@^0.27.0":
-  "integrity" "sha512-SJUUEpkFCL+GTpEK6c2EhZQJant67ahGLF6M1xRmIsq6E+AtbHgu+y8mWvFbtpb7lx4gqNKpXSEwlHUTTuxVGw=="
-  "resolved" "https://registry.npmjs.org/@glimmer/compiler/-/compiler-0.27.0.tgz"
-  "version" "0.27.0"
-  dependencies:
-    "@glimmer/interfaces" "^0.27.0"
-    "@glimmer/syntax" "^0.27.0"
-    "@glimmer/util" "^0.27.0"
-    "@glimmer/wire-format" "^0.27.0"
-    "simple-html-tokenizer" "^0.3.0"
-
 "@glimmer/component@^1.0.3":
   "integrity" "sha512-GD3gcN+Pr2flmxkt2lm5K86jwX+KRD9QQpNH+wiEQGjBXOzd46+XD5npH1sRByqLYml9rW4klflcrEfNb7dnQw=="
   "resolved" "https://registry.npmjs.org/@glimmer/component/-/component-1.0.3.tgz"
@@ -1100,13 +1065,6 @@
   "version" "0.65.1"
   dependencies:
     "@glimmer/env" "^0.1.7"
-
-"@glimmer/interfaces@^0.27.0":
-  "integrity" "sha512-Uz9txXB0Agnac6vUOAk6uZIB7SeS/fFrdjyNsNJnge5XeojvOQs1YyIFqOhky3G7NHO/mcx3Tdt8PXggFakVtQ=="
-  "resolved" "https://registry.npmjs.org/@glimmer/interfaces/-/interfaces-0.27.0.tgz"
-  "version" "0.27.0"
-  dependencies:
-    "@glimmer/wire-format" "^0.27.0"
 
 "@glimmer/interfaces@^0.42.2":
   "integrity" "sha512-7LOuQd02cxxNNHChzdHMAU8/qOeQvTro141CU5tXITP7z6aOv2D2gkFdau97lLQiVxezGrh8J7h8GCuF7TEqtg=="
@@ -1172,16 +1130,6 @@
     "@glimmer/vm" "^0.42.2"
     "@glimmer/wire-format" "^0.42.2"
 
-"@glimmer/syntax@^0.27.0":
-  "integrity" "sha512-IC+JaGkfF+J3e5jUXrW4SkVAAgI6WyN4kzfJKqWEnjMAa6pB8XGEDkaaMhoMrxjfK+R0Us2PO45CWhGB3FqsKg=="
-  "resolved" "https://registry.npmjs.org/@glimmer/syntax/-/syntax-0.27.0.tgz"
-  "version" "0.27.0"
-  dependencies:
-    "@glimmer/interfaces" "^0.27.0"
-    "@glimmer/util" "^0.27.0"
-    "handlebars" "^4.0.6"
-    "simple-html-tokenizer" "^0.3.0"
-
 "@glimmer/syntax@^0.42.1":
   "integrity" "sha512-SR26SmF/Mb5o2cc4eLHpOyoX5kwwXP4KRhq4fbWfrvan74xVWA38PLspPCzwGhyVH/JsE7tUEPMjSo2DcJge/Q=="
   "resolved" "https://registry.npmjs.org/@glimmer/syntax/-/syntax-0.42.2.tgz"
@@ -1209,11 +1157,6 @@
   dependencies:
     "@glimmer/env" "^0.1.7"
     "@glimmer/validator" "^0.44.0"
-
-"@glimmer/util@^0.27.0":
-  "integrity" "sha512-GxER83ZuyEyZ5Phn86VkHcjjN/3MagK0MMr91S5t62IVSW/zyFevpaVV26YKmisDqOe4918nvwGqn543O5gGXw=="
-  "resolved" "https://registry.npmjs.org/@glimmer/util/-/util-0.27.0.tgz"
-  "version" "0.27.0"
 
 "@glimmer/util@^0.42.2":
   "integrity" "sha512-Heck0baFSaWDanCYtmOcLeaz7v+rSqI8ovS7twrp2/FWEteb3Ze5sWQ2BEuSAG23L/k/lzVwYM/MY7ZugxBpaA=="
@@ -1262,13 +1205,6 @@
   dependencies:
     "@glimmer/interfaces" "^0.42.2"
     "@glimmer/util" "^0.42.2"
-
-"@glimmer/wire-format@^0.27.0":
-  "integrity" "sha512-gNhityUr9HODYH9GydHVk7C6NZ57MqSbdGzC5TM8VdPibtd72N3+3Zggrm12Faw4E4zTvTM1692Sz/bNwMxLNw=="
-  "resolved" "https://registry.npmjs.org/@glimmer/wire-format/-/wire-format-0.27.0.tgz"
-  "version" "0.27.0"
-  dependencies:
-    "@glimmer/util" "^0.27.0"
 
 "@glimmer/wire-format@^0.42.2":
   "integrity" "sha512-IqUo6mdJ7GRsK7KCyZxrc17ioSg9RBniEnb418ZMQxsV/WBv9NQ359MuClUck2M24z1AOXo4TerUw0U7+pb1/A=="
@@ -2239,14 +2175,6 @@
   dependencies:
     "ember-rfc176-data" "^0.3.16"
 
-"babel-plugin-filter-imports@^1.1.1":
-  "integrity" "sha512-BpXJV3fndKEP1D9Yhwpz4NIjM/d1FYpdx4E4KmUPnTIFUxXNj0QEAY18MXVzEyYi2EWEVhoOG2CmclDfdMj5ew=="
-  "resolved" "https://registry.npmjs.org/babel-plugin-filter-imports/-/babel-plugin-filter-imports-1.1.2.tgz"
-  "version" "1.1.2"
-  dependencies:
-    "babel-types" "^6.26.0"
-    "lodash" "^4.17.10"
-
 "babel-plugin-filter-imports@^4.0.0":
   "integrity" "sha512-jDLlxI8QnfKd7PtieH6pl4tZJzymzfCDCPGdTq/grgbiYAikwDPp/oL0IlFJn0HQjLpcLkyYhPKkUVneRESw5w=="
   "resolved" "https://registry.npmjs.org/babel-plugin-filter-imports/-/babel-plugin-filter-imports-4.0.0.tgz"
@@ -2287,16 +2215,6 @@
   "resolved" "https://registry.npmjs.org/babel-plugin-syntax-async-functions/-/babel-plugin-syntax-async-functions-6.13.0.tgz"
   "version" "6.13.0"
 
-"babel-plugin-syntax-class-properties@^6.8.0":
-  "integrity" "sha512-chI3Rt9T1AbrQD1s+vxw3KcwC9yHtF621/MacuItITfZX344uhQoANjpoSJZleAmW2tjlolqB/f+h7jIqXa7pA=="
-  "resolved" "https://registry.npmjs.org/babel-plugin-syntax-class-properties/-/babel-plugin-syntax-class-properties-6.13.0.tgz"
-  "version" "6.13.0"
-
-"babel-plugin-syntax-decorators@^6.1.18":
-  "integrity" "sha512-AWj19x2aDm8qFQ5O2JcD6pwJDW1YdcnO+1b81t7gxrGjz5VHiUqeYWAR4h7zueWMalRelrQDXprv2FrY1dbpbw=="
-  "resolved" "https://registry.npmjs.org/babel-plugin-syntax-decorators/-/babel-plugin-syntax-decorators-6.13.0.tgz"
-  "version" "6.13.0"
-
 "babel-plugin-syntax-dynamic-import@^6.18.0":
   "integrity" "sha1-jWomIpyDdFqZgqRBBRVyyqF5sdo= sha512-MioUE+LfjCEz65Wf7Z/Rm4XCP5k2c+TbMd2Z2JKc7U9uwjBhAfNPE48KC4GTGKhppMeYVepwDBNO/nGY6NYHBA=="
   "resolved" "https://registry.npmjs.org/babel-plugin-syntax-dynamic-import/-/babel-plugin-syntax-dynamic-import-6.18.0.tgz"
@@ -2320,25 +2238,6 @@
     "babel-helper-remap-async-to-generator" "^6.24.1"
     "babel-plugin-syntax-async-functions" "^6.8.0"
     "babel-runtime" "^6.22.0"
-
-"babel-plugin-transform-class-properties@^6.24.1":
-  "integrity" "sha512-n4jtBA3OYBdvG5PRMKsMXJXHfLYw/ZOmtxCLOOwz6Ro5XlrColkStLnz1AS1L2yfPA9BKJ1ZNlmVCLjAL9DSIg=="
-  "resolved" "https://registry.npmjs.org/babel-plugin-transform-class-properties/-/babel-plugin-transform-class-properties-6.24.1.tgz"
-  "version" "6.24.1"
-  dependencies:
-    "babel-helper-function-name" "^6.24.1"
-    "babel-plugin-syntax-class-properties" "^6.8.0"
-    "babel-runtime" "^6.22.0"
-    "babel-template" "^6.24.1"
-
-"babel-plugin-transform-decorators-legacy@^1.3.4":
-  "integrity" "sha512-jYHwjzRXRelYQ1uGm353zNzf3QmtdCfvJbuYTZ4gKveK7M9H1fs3a5AKdY1JUDl0z97E30ukORW1dzhWvsabtA=="
-  "resolved" "https://registry.npmjs.org/babel-plugin-transform-decorators-legacy/-/babel-plugin-transform-decorators-legacy-1.3.5.tgz"
-  "version" "1.3.5"
-  dependencies:
-    "babel-plugin-syntax-decorators" "^6.1.18"
-    "babel-runtime" "^6.2.0"
-    "babel-template" "^6.3.0"
 
 "babel-plugin-transform-es2015-arrow-functions@^6.22.0":
   "integrity" "sha1-RSaSy3EdX3ncf4XkQM5BufJE0iE= sha512-PCqwwzODXW7JMrzu+yZIaYbPQSKjDTAsNNlK2l5Gg9g4rz2VzLnZsStvp/3c46GfXpwkyufb3NCyG9+50FF1Vg=="
@@ -2612,7 +2511,7 @@
     "mkdirp" "^0.5.1"
     "source-map-support" "^0.4.15"
 
-"babel-runtime@^6.18.0", "babel-runtime@^6.2.0", "babel-runtime@^6.22.0", "babel-runtime@^6.26.0":
+"babel-runtime@^6.18.0", "babel-runtime@^6.22.0", "babel-runtime@^6.26.0":
   "integrity" "sha1-llxwWGaOgrVde/4E/yM3vItWR/4= sha512-ITKNuq2wKlW1fJg9sSW52eepoYgZBggvOAHC0u/CYu/qxQ9EVzThCgR69BnSXLHjy2f7SY5zaQ4yt7H9ZVxY2g=="
   "resolved" "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.26.0.tgz"
   "version" "6.26.0"
@@ -2620,7 +2519,7 @@
     "core-js" "^2.4.0"
     "regenerator-runtime" "^0.11.0"
 
-"babel-template@^6.24.1", "babel-template@^6.26.0", "babel-template@^6.3.0":
+"babel-template@^6.24.1", "babel-template@^6.26.0":
   "integrity" "sha1-3gPi0WOWsGn0bdn/+FIfsaDjXgI= sha512-PCOcLFW7/eazGUKIoqH97sO9A2UYMahsn/yRQ7uOk37iutwjq7ODtcTNF+iFDSHNfkctqsLRjLP7URnOx0T1fg=="
   "resolved" "https://registry.npmjs.org/babel-template/-/babel-template-6.26.0.tgz"
   "version" "6.26.0"
@@ -3029,14 +2928,6 @@
     "symlink-or-copy" "^1.1.8"
     "tree-sync" "^1.2.2"
 
-"broccoli-file-creator@^1.1.1":
-  "integrity" "sha512-l9zthHg6bAtnOfRr/ieZ1srRQEsufMZID7xGYRW3aBDv3u/3Eux+Iawl10tAGYE5pL9YB4n5X4vxkp6iNOoZ9g=="
-  "resolved" "https://registry.npmjs.org/broccoli-file-creator/-/broccoli-file-creator-1.2.0.tgz"
-  "version" "1.2.0"
-  dependencies:
-    "broccoli-plugin" "^1.1.0"
-    "mkdirp" "^0.5.1"
-
 "broccoli-file-creator@^2.1.1":
   "integrity" "sha512-YpjOExWr92C5vhnK0kmD81kM7U09kdIRZk9w4ZDCDHuHXW+VE/x6AGEOQQW3loBQQ6Jk+k+TSm8dESy4uZsnjw=="
   "resolved" "https://registry.npmjs.org/broccoli-file-creator/-/broccoli-file-creator-2.1.1.tgz"
@@ -3045,7 +2936,7 @@
     "broccoli-plugin" "^1.1.0"
     "mkdirp" "^0.5.1"
 
-"broccoli-filter@^1.2.2", "broccoli-filter@^1.2.3", "broccoli-filter@^1.2.4":
+"broccoli-filter@^1.2.2", "broccoli-filter@^1.2.3":
   "integrity" "sha512-VXJXw7eBfG82CFxaBDjYmyN7V72D4In2zwLVQJd/h3mBfF3CMdRTsv2L20lmRTtCv1sAHcB+LgMso90e/KYiLw=="
   "resolved" "https://registry.npmjs.org/broccoli-filter/-/broccoli-filter-1.3.0.tgz"
   "version" "1.3.0"
@@ -4801,14 +4692,6 @@
     "minimalistic-assert" "^1.0.0"
     "minimalistic-crypto-utils" "^1.0.0"
 
-"ember-ast-helpers@0.3.5":
-  "integrity" "sha512-ZtaGAUDvRX13G9D4t4WbTMhcUzqsw6KqhcHreIiZi3ZhRFlSZ3BumgyJ6buDZj+tCBLiQsxRv7l5AY6imqNR6Q=="
-  "resolved" "https://registry.npmjs.org/ember-ast-helpers/-/ember-ast-helpers-0.3.5.tgz"
-  "version" "0.3.5"
-  dependencies:
-    "@glimmer/compiler" "^0.27.0"
-    "@glimmer/syntax" "^0.27.0"
-
 "ember-auto-import@^1.10.0", "ember-auto-import@^1.10.1":
   "integrity" "sha512-7bOWzPELlVwdWDOkB+phDIjg8BNW+/2RiLLQ+Xa/eIvCLT4ABYhHV5wqW5gs5BnXTDVLfE4ddKZdllnGuPGGDQ=="
   "resolved" "https://registry.npmjs.org/ember-auto-import/-/ember-auto-import-1.10.1.tgz"
@@ -4868,63 +4751,6 @@
     "semver" "^5.5.0"
 
 "ember-cli-babel@^6.10.0":
-  "integrity" "sha512-7ceC8joNYxY2wES16iIBlbPSxwKDBhYwC8drU3ZEvuPDMwVv1KzxCNu1fvxyFEBWhwaRNTUxSCsEVoTd9nosGA=="
-  "resolved" "https://registry.npmjs.org/ember-cli-babel/-/ember-cli-babel-6.18.0.tgz"
-  "version" "6.18.0"
-  dependencies:
-    "amd-name-resolver" "1.2.0"
-    "babel-plugin-debug-macros" "^0.2.0-beta.6"
-    "babel-plugin-ember-modules-api-polyfill" "^2.6.0"
-    "babel-plugin-transform-es2015-modules-amd" "^6.24.0"
-    "babel-polyfill" "^6.26.0"
-    "babel-preset-env" "^1.7.0"
-    "broccoli-babel-transpiler" "^6.5.0"
-    "broccoli-debug" "^0.6.4"
-    "broccoli-funnel" "^2.0.0"
-    "broccoli-source" "^1.1.0"
-    "clone" "^2.0.0"
-    "ember-cli-version-checker" "^2.1.2"
-    "semver" "^5.5.0"
-
-"ember-cli-babel@^6.11.0":
-  "integrity" "sha512-7ceC8joNYxY2wES16iIBlbPSxwKDBhYwC8drU3ZEvuPDMwVv1KzxCNu1fvxyFEBWhwaRNTUxSCsEVoTd9nosGA=="
-  "resolved" "https://registry.npmjs.org/ember-cli-babel/-/ember-cli-babel-6.18.0.tgz"
-  "version" "6.18.0"
-  dependencies:
-    "amd-name-resolver" "1.2.0"
-    "babel-plugin-debug-macros" "^0.2.0-beta.6"
-    "babel-plugin-ember-modules-api-polyfill" "^2.6.0"
-    "babel-plugin-transform-es2015-modules-amd" "^6.24.0"
-    "babel-polyfill" "^6.26.0"
-    "babel-preset-env" "^1.7.0"
-    "broccoli-babel-transpiler" "^6.5.0"
-    "broccoli-debug" "^0.6.4"
-    "broccoli-funnel" "^2.0.0"
-    "broccoli-source" "^1.1.0"
-    "clone" "^2.0.0"
-    "ember-cli-version-checker" "^2.1.2"
-    "semver" "^5.5.0"
-
-"ember-cli-babel@^6.17.0":
-  "integrity" "sha512-7ceC8joNYxY2wES16iIBlbPSxwKDBhYwC8drU3ZEvuPDMwVv1KzxCNu1fvxyFEBWhwaRNTUxSCsEVoTd9nosGA=="
-  "resolved" "https://registry.npmjs.org/ember-cli-babel/-/ember-cli-babel-6.18.0.tgz"
-  "version" "6.18.0"
-  dependencies:
-    "amd-name-resolver" "1.2.0"
-    "babel-plugin-debug-macros" "^0.2.0-beta.6"
-    "babel-plugin-ember-modules-api-polyfill" "^2.6.0"
-    "babel-plugin-transform-es2015-modules-amd" "^6.24.0"
-    "babel-polyfill" "^6.26.0"
-    "babel-preset-env" "^1.7.0"
-    "broccoli-babel-transpiler" "^6.5.0"
-    "broccoli-debug" "^0.6.4"
-    "broccoli-funnel" "^2.0.0"
-    "broccoli-source" "^1.1.0"
-    "clone" "^2.0.0"
-    "ember-cli-version-checker" "^2.1.2"
-    "semver" "^5.5.0"
-
-"ember-cli-babel@^6.3.0":
   "integrity" "sha512-7ceC8joNYxY2wES16iIBlbPSxwKDBhYwC8drU3ZEvuPDMwVv1KzxCNu1fvxyFEBWhwaRNTUxSCsEVoTd9nosGA=="
   "resolved" "https://registry.npmjs.org/ember-cli-babel/-/ember-cli-babel-6.18.0.tgz"
   "version" "6.18.0"
@@ -5019,16 +4845,6 @@
     "rsvp" "^4.7.0"
 
 "ember-cli-htmlbars@^2.0.1":
-  "integrity" "sha512-3f3PAxdnQ/fhQa8XP/3z4RLRgLHxV8j4Ln75aHbRdemOCjBa048KxL9l+acRLhCulbGQCMnLiIUIC89PAzLrcA=="
-  "resolved" "https://registry.npmjs.org/ember-cli-htmlbars/-/ember-cli-htmlbars-2.0.5.tgz"
-  "version" "2.0.5"
-  dependencies:
-    "broccoli-persistent-filter" "^1.4.3"
-    "hash-for-dep" "^1.2.3"
-    "json-stable-stringify" "^1.0.0"
-    "strip-bom" "^3.0.0"
-
-"ember-cli-htmlbars@^2.0.2":
   "integrity" "sha512-3f3PAxdnQ/fhQa8XP/3z4RLRgLHxV8j4Ln75aHbRdemOCjBa048KxL9l+acRLhCulbGQCMnLiIUIC89PAzLrcA=="
   "resolved" "https://registry.npmjs.org/ember-cli-htmlbars/-/ember-cli-htmlbars-2.0.5.tgz"
   "version" "2.0.5"
@@ -5190,7 +5006,7 @@
     "stagehand" "^1.0.0"
     "walk-sync" "^2.0.0"
 
-"ember-cli-version-checker@^2.0.0", "ember-cli-version-checker@^2.1.2":
+"ember-cli-version-checker@^2.1.0":
   "integrity" "sha512-G+KtYIVlSOWGcNaTFHk76xR4GdzDLzAS4uxZUKdASuFX0KJE43C6DaqL+y3VTpUFLI2FIkAS6HZ4I1YBi+S3hg=="
   "resolved" "https://registry.npmjs.org/ember-cli-version-checker/-/ember-cli-version-checker-2.2.0.tgz"
   "version" "2.2.0"
@@ -5198,7 +5014,7 @@
     "resolve" "^1.3.3"
     "semver" "^5.3.0"
 
-"ember-cli-version-checker@^2.1.0":
+"ember-cli-version-checker@^2.1.2":
   "integrity" "sha512-G+KtYIVlSOWGcNaTFHk76xR4GdzDLzAS4uxZUKdASuFX0KJE43C6DaqL+y3VTpUFLI2FIkAS6HZ4I1YBi+S3hg=="
   "resolved" "https://registry.npmjs.org/ember-cli-version-checker/-/ember-cli-version-checker-2.2.0.tgz"
   "version" "2.2.0"
@@ -5329,7 +5145,7 @@
     "workerpool" "^6.0.3"
     "yam" "^1.0.0"
 
-"ember-compatibility-helpers@^1.0.2", "ember-compatibility-helpers@^1.1.2", "ember-compatibility-helpers@^1.2.1":
+"ember-compatibility-helpers@^1.1.2", "ember-compatibility-helpers@^1.2.1":
   "integrity" "sha512-EKyCGOGBvKkBsk6wKfg3GhjTvTTkcEwzl/cv4VYvZM18cihmjGNpliR4BymWsKRWrv4VJLyq15Vhk3NHkSNBag=="
   "resolved" "https://registry.npmjs.org/ember-compatibility-helpers/-/ember-compatibility-helpers-1.2.2.tgz"
   "version" "1.2.2"
@@ -5356,32 +5172,6 @@
   "integrity" "sha512-B7wiurPgsxsSGzJuPFkpBWnaeuCu2PGpG2BjyrfA1VcL7//o+5RSnZqiCEY326y7qmxb2GoCgo0ft03KBU0rRw=="
   "resolved" "https://registry.npmjs.org/ember-export-application-global/-/ember-export-application-global-2.0.1.tgz"
   "version" "2.0.1"
-
-"ember-font-awesome@^4.0.0-rc.4":
-  "integrity" "sha512-2UAbgm0NBHoyg6mDijCrCjQAW653g0nWbU3bb1pxyESiO394uAVufhwZQ68OMGHFDj4PHdwM4wv5DRLdunxoVA=="
-  "resolved" "https://registry.npmjs.org/ember-font-awesome/-/ember-font-awesome-4.0.0-rc.4.tgz"
-  "version" "4.0.0-rc.4"
-  dependencies:
-    "@ember-decorators/argument" "^0.8.13"
-    "@ember-decorators/babel-transforms" "^2.0.1"
-    "broccoli-filter" "^1.2.4"
-    "broccoli-funnel" "^2.0.1"
-    "chalk" "^2.3.0"
-    "ember-ast-helpers" "0.3.5"
-    "ember-cli-babel" "^6.11.0"
-    "ember-cli-htmlbars" "^2.0.2"
-    "font-awesome" "^4.7.0"
-    "fs-readdir-recursive" "^1.1.0"
-    "postcss" "^6.0.14"
-    "sync-disk-cache" "^1.3.2"
-
-"ember-get-config@^0.2.3":
-  "integrity" "sha512-CgkR97y80Dm+hbVTW1O5ZC5cEUIfTsGsR6UPOyuaRdv3B5SRlBSxysnHrYKjRMb68l8AUa5DRkVW6yBh/u7Icw=="
-  "resolved" "https://registry.npmjs.org/ember-get-config/-/ember-get-config-0.2.4.tgz"
-  "version" "0.2.4"
-  dependencies:
-    "broccoli-file-creator" "^1.1.1"
-    "ember-cli-babel" "^6.3.0"
 
 "ember-invoke-action@1.5.1":
   "integrity" "sha512-co6Yg9r5qtK4LvZTZHk+u02YLPbnM2c5ZkXvundxEj3V7qdZg7RULfjU09LmohD+rxW5ADZlwgBi/32XIEWTlw=="
@@ -6462,11 +6252,6 @@
   dependencies:
     "debug" "^3.0.0"
 
-"font-awesome@^4.7.0":
-  "integrity" "sha1-j6jPBBGhoxr9B7BtKQK7n8gVoTM= sha512-U6kGnykA/6bFmg1M/oT9EkFeIYv7JlX3bozwQJWiiLz6L0w3F5vBVPxHlwyX/vtNq1ckcpRKOB9f2Qal/VtFpg=="
-  "resolved" "https://registry.npmjs.org/font-awesome/-/font-awesome-4.7.0.tgz"
-  "version" "4.7.0"
-
 "for-in@^1.0.2":
   "integrity" "sha1-gQaNKVqBQuwKxybG4iAMMPttXoA= sha512-7EwmXrOjyL+ChxMhmG5lnW9MPt1aIeZEwKhQzoBUdTV0N3zuwWDZYVJatDvZ2OyzPUvdIAZDsCetk3coyMfcnQ=="
   "resolved" "https://registry.npmjs.org/for-in/-/for-in-1.0.2.tgz"
@@ -6628,11 +6413,6 @@
   "version" "1.2.7"
   dependencies:
     "minipass" "^2.6.0"
-
-"fs-readdir-recursive@^1.1.0":
-  "integrity" "sha512-GNanXlVr2pf02+sPN40XN8HG+ePaNcvM0q5mZBd668Obwb0yD5GiUbZOFgwn8kGMY6I3mdyDJzieUy3PTYyTRA=="
-  "resolved" "https://registry.npmjs.org/fs-readdir-recursive/-/fs-readdir-recursive-1.1.0.tgz"
-  "version" "1.1.0"
 
 "fs-tree-diff@^0.5.2", "fs-tree-diff@^0.5.3", "fs-tree-diff@^0.5.4", "fs-tree-diff@^0.5.6":
   "integrity" "sha512-872G8ax0kHh01m9n/2KDzgYwouKza0Ad9iFltBpNykvROvf2AGtoOzPJgGx125aolGPER3JuC7uZFrQ7bG1AZw=="
@@ -7005,7 +6785,7 @@
   "resolved" "https://registry.npmjs.org/growly/-/growly-1.3.0.tgz"
   "version" "1.3.0"
 
-"handlebars@^4.0.13", "handlebars@^4.0.4", "handlebars@^4.0.6", "handlebars@^4.3.1", "handlebars@^4.4.2", "handlebars@^4.7.3":
+"handlebars@^4.0.13", "handlebars@^4.0.4", "handlebars@^4.3.1", "handlebars@^4.4.2", "handlebars@^4.7.3":
   "integrity" "sha512-1f2BACcBfiwAfStCKZNrUCgqNZkGsAT7UM3kkYtXuLo0KnaVfjKOyf7PRzB6++aK9STyT1Pd2ZCPe3EGOXleXA=="
   "resolved" "https://registry.npmjs.org/handlebars/-/handlebars-4.7.6.tgz"
   "version" "4.7.6"
@@ -9095,6 +8875,11 @@
   "resolved" "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz"
   "version" "4.1.1"
 
+"object-assign@4.1.1":
+  "integrity" "sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM= sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg=="
+  "resolved" "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz"
+  "version" "4.1.1"
+
 "object-component@0.0.3":
   "integrity" "sha1-8MaapQ78lbhmwYb0AKM3acsvEpE= sha512-S0sN3agnVh2SZNEIGc0N1X4Z5K0JeFbGBrnuZpsxuUh5XLF0BnvWkMjRXo/zGKLd/eghvNIKcx1pQkmUjXIyrA=="
   "resolved" "https://registry.npmjs.org/object-component/-/object-component-0.0.3.tgz"
@@ -9585,15 +9370,6 @@
   "integrity" "sha1-AerA/jta9xoqbAL+q7jB/vfgDqs= sha512-xTgYBc3fuo7Yt7JbiuFxSYGToMoz8fLoE6TC9Wx1P/u+LfeThMOAqmuyECnlBaaJb+u1m9hHiXUEtwW4OzfUJg=="
   "resolved" "https://registry.npmjs.org/posix-character-classes/-/posix-character-classes-0.1.1.tgz"
   "version" "0.1.1"
-
-"postcss@^6.0.14":
-  "integrity" "sha512-soOk1h6J3VMTZtVeVpv15/Hpdl2cBLX3CAw4TAbkpTJiNPk9YP/zWcD1ND+xEtvyuuvKzbxliTOIyvkSeSJ6ag=="
-  "resolved" "https://registry.npmjs.org/postcss/-/postcss-6.0.23.tgz"
-  "version" "6.0.23"
-  dependencies:
-    "chalk" "^2.4.1"
-    "source-map" "^0.6.1"
-    "supports-color" "^5.4.0"
 
 "prelude-ls@^1.2.1":
   "integrity" "sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g=="
@@ -10596,11 +10372,6 @@
   dependencies:
     "debug" "^2.2.0"
 
-"simple-html-tokenizer@^0.3.0":
-  "integrity" "sha512-cuUWLyKJbCExtBmxJWhmIk/KIbMF1yOuNaansJiPEdxqitM7r7So3a1M4Sw2uqfNYWjBTiVVdJjb7vtYIaEjhw=="
-  "resolved" "https://registry.npmjs.org/simple-html-tokenizer/-/simple-html-tokenizer-0.3.0.tgz"
-  "version" "0.3.0"
-
 "simple-html-tokenizer@^0.5.10":
   "integrity" "sha512-1DHMUmvUOGuUZ9/+cX/+hOhWhRD5dEw6lodn8WuV+T+cQ31hhBcCu1dcDsNotowi4mMaNhrLyKoS+DtB81HdDA=="
   "resolved" "https://registry.npmjs.org/simple-html-tokenizer/-/simple-html-tokenizer-0.5.10.tgz"
@@ -11145,7 +10916,7 @@
   "resolved" "https://registry.npmjs.org/supports-color/-/supports-color-2.0.0.tgz"
   "version" "2.0.0"
 
-"supports-color@^5.3.0", "supports-color@^5.4.0":
+"supports-color@^5.3.0":
   "integrity" "sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow=="
   "resolved" "https://registry.npmjs.org/supports-color/-/supports-color-5.5.0.tgz"
   "version" "5.5.0"
@@ -11169,7 +10940,7 @@
   "resolved" "https://registry.npmjs.org/symlink-or-copy/-/symlink-or-copy-1.3.1.tgz"
   "version" "1.3.1"
 
-"sync-disk-cache@^1.3.2", "sync-disk-cache@^1.3.3":
+"sync-disk-cache@^1.3.3":
   "integrity" "sha512-GlkGeM81GPPEKz/lH7QUTbvqLq7K/IUTuaKDSMulP9XQ42glqNJIN/RKgSOw4y8vxL1gOVvj+W7ruEO4s36eCw=="
   "resolved" "https://registry.npmjs.org/sync-disk-cache/-/sync-disk-cache-1.3.4.tgz"
   "version" "1.3.4"
