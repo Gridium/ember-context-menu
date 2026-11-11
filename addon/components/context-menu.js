@@ -1,10 +1,8 @@
 import layout from '../templates/components/context-menu';
 
-import invokeAction from 'ember-invoke-action';
-
 import Component from '@ember/component';
 import { inject as service } from '@ember/service';
-import { htmlSafe } from '@ember/string';
+import { htmlSafe } from '@ember/template';
 import { reads } from '@ember/object/computed';
 import { computed, get } from '@ember/object';
 
@@ -27,15 +25,19 @@ export default Component.extend({
 
   didInsertElement() {
     this._super(...arguments);
-    this.setWormholeTarget();
+    this.wormholeElement = this.ensureWormholeElement();
   },
 
-  setWormholeTarget() {
+  ensureWormholeElement() {
     let id = 'wormhole-context-menu';
-    let target = document.querySelectorAll(`#${id}`);
-    if (target.length === 0) {
+    let target = document.getElementById(id);
+
+    if (!target) {
       document.body.insertAdjacentHTML('beforeend', `<div id="${id}"></div>`);
+      target = document.getElementById(id);
     }
+
+    return target;
   },
 
   position: computed('contextMenu.position.{left,top}', function () {
@@ -68,7 +70,7 @@ export default Component.extend({
     let event = this.clickEvent;
 
     return function (item) {
-      invokeAction(item, 'action', selection, details, event);
+      item.action?.(selection, details, event);
     };
   }),
 });

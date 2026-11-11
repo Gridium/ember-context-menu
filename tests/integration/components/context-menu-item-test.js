@@ -1,7 +1,7 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
-import hbs from 'htmlbars-inline-precompile';
+import { hbs } from 'ember-cli-htmlbars';
 import { click, find, findAll } from '@ember/test-helpers';
 
 function hasDisabledClass($element) {
@@ -22,7 +22,7 @@ module('Integration | Component | {{context-menu-item}}', function (hooks) {
       label: 'foo',
     });
 
-    await render(hbs`{{context-menu-item item=item}}`);
+    await render(hbs`{{context-menu-item item=this.item}}`);
 
     let $options = await findAll('li.context-menu__item');
 
@@ -35,7 +35,7 @@ module('Integration | Component | {{context-menu-item}}', function (hooks) {
       label: 'foo',
     });
 
-    await render(hbs`{{context-menu-item item=item amount=2}}`);
+    await render(hbs`{{context-menu-item item=this.item amount=2}}`);
 
     let $options = await findAll('li.context-menu__item');
     assert.equal($options[0].innerText.trim(), 'foo (2)', 'shows option label');
@@ -55,7 +55,7 @@ module('Integration | Component | {{context-menu-item}}', function (hooks) {
       assert.deepEqual(i, item, `calls "clickAction" with item's action`);
     };
 
-    await render(hbs`{{context-menu-item item=item
+    await render(hbs`{{context-menu-item item=this.item
                                         clickAction=(action 'clickAction')}}`);
 
     await click(find('li.context-menu__item'));
@@ -72,8 +72,10 @@ module('Integration | Component | {{context-menu-item}}', function (hooks) {
       },
     });
 
-    await render(hbs`{{context-menu-item item=item
-                                        isDisabled=item.disabled}}`);
+    this.actions.itemIsDisabled = (item) => item.disabled;
+
+    await render(hbs`{{context-menu-item item=this.item
+                                        itemIsDisabled=(action 'itemIsDisabled')}}`);
 
     let $option = await find('li.context-menu__item');
     assert.ok(hasDisabledClass($option), 'has disabled class');
@@ -93,7 +95,7 @@ module('Integration | Component | {{context-menu-item}}', function (hooks) {
     };
 
     await render(hbs`
-      {{context-menu-item item=item itemIsDisabled=(action 'itemIsDisabled')}}
+      {{context-menu-item item=this.item itemIsDisabled=(action 'itemIsDisabled')}}
     `);
   });
 
@@ -125,7 +127,7 @@ module('Integration | Component | {{context-menu-item}}', function (hooks) {
       );
     };
 
-    await render(hbs`{{context-menu-item item=item
+    await render(hbs`{{context-menu-item item=this.item
                                         clickAction=(action 'clickAction')}}`);
 
     let $options = await findAll('li.context-menu__item');
@@ -155,8 +157,10 @@ module('Integration | Component | {{context-menu-item}}', function (hooks) {
       subActions: [{ label: 'bar' }],
     });
 
-    await render(hbs`{{context-menu-item item=item
-                                        isDisabled=item.disabled}}`);
+    this.actions.itemIsDisabled = (item) => item.disabled;
+
+    await render(hbs`{{context-menu-item item=this.item
+                                        itemIsDisabled=(action 'itemIsDisabled')}}`);
 
     let $parent = await find('li.context-menu__item');
     let $subMenu = $parent.querySelectorAll('.context-menu--sub');
@@ -170,7 +174,7 @@ module('Integration | Component | {{context-menu-item}}', function (hooks) {
       subActions: [{ label: 'bar' }],
     });
 
-    await render(hbs`{{context-menu-item item=item amount=2}}`);
+    await render(hbs`{{context-menu-item item=this.item amount=2}}`);
 
     let $parent = await find('li.context-menu__item');
     let $sub = $parent.querySelectorAll('.context-menu--sub');
@@ -185,7 +189,7 @@ module('Integration | Component | {{context-menu-item}}', function (hooks) {
       icon: 'search',
     });
 
-    await render(hbs`{{context-menu-item item=item}}`);
+    await render(hbs`{{context-menu-item item=this.item}}`);
 
     let $option = find('li.context-menu__item');
     let $icon = $option.querySelectorAll('.fa');

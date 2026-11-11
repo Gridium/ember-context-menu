@@ -1,7 +1,7 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { click, render, settled } from '@ember/test-helpers';
-import hbs from 'htmlbars-inline-precompile';
+import { hbs } from 'ember-cli-htmlbars';
 
 let $target, contextMenu;
 let e = { clientX: 0, clientY: 0 };
@@ -109,8 +109,6 @@ module('Integration | Component | {{context-menu}}', function (hooks) {
     assert.dom('.context-menu', $target).exists('visible on active');
 
     await click(document.body);
-
-    await settled();
 
     assert.equal(contextMenu.isActive, false, 'isActive is set false on click');
     assert

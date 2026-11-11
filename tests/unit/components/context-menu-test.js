@@ -42,7 +42,7 @@ module('Unit | Component | context-menu', function (hooks) {
   test(`isDisabled() depending on selection and details`, function (assert) {
     assert.expect(3);
 
-    let contextSelection = subject.set('selection', [1, 2]);
+    let contextSelection = subject.set('_selection', [1, 2]);
     let contextDetails = subject.set('details', { foo: 'bar' });
 
     let item = {
@@ -71,7 +71,7 @@ module('Unit | Component | context-menu', function (hooks) {
   test(`clickAction() calls item's action with selection and details`, function (assert) {
     assert.expect(3);
 
-    let contextSelection = subject.set('selection', [1, 2]);
+    let contextSelection = subject.set('_selection', [1, 2]);
     let contextDetails = subject.set('details', { foo: 'bar' });
     let contextEvent = subject.set('clickEvent', { clientX: 45 });
 

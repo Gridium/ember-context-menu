@@ -2,12 +2,15 @@
 
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 'latest',
     sourceType: 'module',
-    ecmaFeatures: {
-      legacyDecorators: true,
+    requireConfigFile: false,
+    babelOptions: {
+      plugins: [
+        ['@babel/plugin-proposal-decorators', { decoratorsBeforeExport: true }],
+      ],
     },
   },
   plugins: ['ember'],
@@ -21,11 +24,14 @@ module.exports = {
   },
   rules: {
     // TODO: remove these after glimmer refactor
+    'ember/no-classic-classes': 'off',
+    'ember/no-classic-components': 'off',
     'ember/no-component-lifecycle-hooks': 'off',
     'ember/no-get': 'off',
     'ember/no-jquery': 'error',
     'ember/no-mixins': 'off',
     'ember/no-new-mixins': 'off',
+    'ember/require-tagless-components': 'off',
   },
   overrides: [
     // node files

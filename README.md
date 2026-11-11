@@ -11,9 +11,9 @@ An [ember-cli](http://www.ember-cli.com/) addon to add any right-click-menu to y
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember.js v3.16 or above
-* Ember CLI v2.13 or above
-* Node.js v10 or above
+* Ember.js v4.0 or above
+* Ember CLI v4.12 or above
+* Node.js v16 or above
 
 
 Installation
@@ -86,9 +86,9 @@ You can optionally set an icon to show in front of the label. Just give the name
   ]
 ```
 
-The icons that you can use are the one from font-awesome.
-See [http://fontawesome.io/icons/](http://fontawesome.io/icons/) for the icons
-to use. Special thanks to the [ember-font-awesome addon](https://github.com/martndemus/ember-font-awesome).
+The icon is rendered as `<i class="fa fa-{icon}">`, so any font-awesome
+icon name works as long as your app loads font-awesome itself (this addon
+no longer bundles a font-awesome dependency).
 
 ### Sub actions
 

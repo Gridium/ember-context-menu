@@ -1,19 +1,19 @@
 <span class="context-menu__item__label">
-  {{#if item.icon}}
-    <i class="fa fa-{{item.icon}} context-menu__item__icon"></i>
+  {{#if this.item.icon}}
+    <i class="fa fa-{{this.item.icon}} context-menu__item__icon"></i>
   {{/if}}
-  {{item.label}} {{#if _amount}}({{_amount}}){{/if}}
+  {{this.item.label}} {{#if this._amount}}({{this._amount}}){{/if}}
 </span>
 
-{{#if item.subActions}}
-  {{#unless isDisabled}}
+{{#if this.item.subActions}}
+  {{#unless this.isDisabled}}
     <ul class="context-menu--sub">
-      {{#each item.subActions as |subItem|}}
+      {{#each this.item.subActions as |subItem|}}
         {{context-menu-item
           item=subItem
-          amount=amount
-          itemIsDisabled=itemIsDisabled
-          clickAction=clickAction
+          amount=this.amount
+          itemIsDisabled=this.itemIsDisabled
+          clickAction=this.clickAction
         }}
       {{/each}}
     </ul>
